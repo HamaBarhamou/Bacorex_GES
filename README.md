@@ -1,0 +1,2 @@
+# Bacorex_GES
+PROJECT MANAGEMENT
