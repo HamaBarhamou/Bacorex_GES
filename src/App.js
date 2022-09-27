@@ -6,7 +6,7 @@
 /*   By: Barhamou <hamabarhamou@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/27 14:15:49 by Barhamou          #+#    #+#             */
-/*   Updated: 2022/09/27 15:27:19 by Barhamou         ###   ########.fr       */
+/*   Updated: 2022/09/27 20:29:09 by Barhamou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 import React from "react";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import Connexion from "./pages/Connexion";
+import Home from "./pages/Home"
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
     <BrowserRouter>
         <Routes>
         <Route path="/" element={<Connexion/>} />
+        <Route path="/home" element={<Home/>} />
         </Routes>
     </BrowserRouter>
   );
