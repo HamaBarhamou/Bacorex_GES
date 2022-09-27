@@ -1,9 +1,16 @@
 
+import React from "react";
+import {BrowserRouter, Routes, Route} from "react-router-dom";
+import Connexion from "./pages/Connexion";
+import Work_page from "./pages/Work_page";
+
 function App() {
   return (
-    <div className="App">
-     <h4>hello world, how hare you</h4>
-    </div>
+    <BrowserRouter>
+        <Routes>
+        <Route path="/" element={<Connexion/>} />
+        </Routes>
+    </BrowserRouter>
   );
 }
 
