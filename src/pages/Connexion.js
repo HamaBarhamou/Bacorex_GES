@@ -6,12 +6,12 @@
 /*   By: Barhamou <hamabarhamou@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/27 15:27:02 by Barhamou          #+#    #+#             */
-/*   Updated: 2022/09/27 20:50:35 by Barhamou         ###   ########.fr       */
+/*   Updated: 2022/09/27 21:02:42 by Barhamou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 import React, { useState } from "react";
-import ReactDOM from "react-dom";
+import { Navigate } from 'react-router-dom';
 import '../styles/styles.css'
 
 
@@ -67,21 +67,21 @@ const Connexion = () => {
     // JSX code for login form
     const renderForm = (
         <div className="form">
-        <form onSubmit={handleSubmit}>
-            <div className="input-container">
-            <label>Username </label>
-            <input type="text" name="uname" required />
-            {renderErrorMessage("uname")}
-            </div>
-            <div className="input-container">
-            <label>Password </label>
-            <input type="password" name="pass" required />
-            {renderErrorMessage("pass")}
-            </div>
-            <div className="button-container">
-            <input type="submit" />
-            </div>
-        </form>
+            <form onSubmit={handleSubmit}>
+                <div className="input-container">
+                <label>Username </label>
+                <input type="text" name="uname" required />
+                {renderErrorMessage("uname")}
+                </div>
+                <div className="input-container">
+                <label>Password </label>
+                <input type="password" name="pass" required />
+                {renderErrorMessage("pass")}
+                </div>
+                <div className="button-container">
+                <input type="submit" />
+                </div>
+            </form>
         </div>
     );
 
@@ -90,7 +90,7 @@ const Connexion = () => {
         <div className="app">
             <div className="login-form">
                 <div className="title">Sign In / BACOREX-SARL</div>
-                {isSubmitted ? <div>User is successfully logged in</div> : renderForm}
+                {isSubmitted ? <Navigate to="/home"  /> : renderForm}
             </div>
         </div>
     );
