@@ -6,7 +6,7 @@
 /*   By: Barhamou <hamabarhamou@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/27 15:27:02 by Barhamou          #+#    #+#             */
-/*   Updated: 2022/09/27 20:35:53 by Barhamou         ###   ########.fr       */
+/*   Updated: 2022/09/27 20:50:35 by Barhamou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,7 +89,7 @@ const Connexion = () => {
     return (
         <div className="app">
             <div className="login-form">
-                <div className="title">Sign In</div>
+                <div className="title">Sign In / BACOREX-SARL</div>
                 {isSubmitted ? <div>User is successfully logged in</div> : renderForm}
             </div>
         </div>
