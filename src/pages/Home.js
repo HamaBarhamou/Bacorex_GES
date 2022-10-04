@@ -1,14 +1,14 @@
 import React from 'react';
-import BodyProject from '../components/BodyProject';
-import Menus from '../components/Menus';
+import Footer from '../components/Footer';
+import Milieu from '../components/Milieu';
 import TitleProject from '../components/TitleProject';
 
 const Home = () => {
     return (
         <div>
             <TitleProject/>
-            <Menus/>
-            <BodyProject/>
+            <Milieu/>
+            <Footer/>
         </div>
     );
 };
