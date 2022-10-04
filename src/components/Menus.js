@@ -1,8 +1,13 @@
 import React from 'react';
 
+const style ={
+    background: 'red'
+}
+
+
 const Menus = () => {
     return (
-        <div>
+        <div style={style}>
             <h3>Menu</h3>
         </div>
     );
