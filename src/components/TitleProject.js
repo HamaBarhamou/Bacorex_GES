@@ -1,8 +1,22 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   TitleProject.js                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: Barhamou <hamabarhamou@gmail.com>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/10/12 10:27:34 by Barhamou          #+#    #+#             */
+/*   Updated: 2022/10/12 10:34:34 by Barhamou         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 import React from 'react';
+import BodyTitle from './BodyTitle';
 import Logos from './Logos';
 import Profile from './Profile';
 
 const style ={
+    display: 'flex',
     background: 'blue'
 }
 
@@ -10,7 +24,7 @@ const TitleProject = () => {
     return (
         <div style={style}>
             <Logos/>
-            <h3>Title of project</h3>
+            <BodyTitle/>
             <Profile/>
         </div>
     );
