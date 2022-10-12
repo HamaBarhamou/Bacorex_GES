@@ -6,7 +6,7 @@
 /*   By: Barhamou <hamabarhamou@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/12 10:27:56 by Barhamou          #+#    #+#             */
-/*   Updated: 2022/10/12 19:24:27 by Barhamou         ###   ########.fr       */
+/*   Updated: 2022/10/12 22:56:55 by Barhamou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,16 @@ import logo from '../images/logo.jpg'
 
 const style ={
     background: 'yellow',
-    width: '15%',
+    width: '10%',
 }
-
+const logoStyle = {
+    height: '100%',
+    width: '100%'
+}
 const Logos = () => {
     return (
         <div style={style}>
-            <img src={logo} style={{height: '100%'}}/>
+            <img src={logo} style={logoStyle}/>
         </div>
     );
 };
