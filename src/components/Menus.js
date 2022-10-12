@@ -6,12 +6,19 @@
 /*   By: Barhamou <hamabarhamou@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/12 19:04:01 by Barhamou          #+#    #+#             */
-/*   Updated: 2022/10/12 19:04:03 by Barhamou         ###   ########.fr       */
+/*   Updated: 2022/10/12 23:16:21 by Barhamou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 import React from 'react';
-import { Menu, MenuItem, MenuButton, SubMenu } from '@szhsin/react-menu';
+import { 
+    Menu, 
+    MenuItem, 
+    MenuButton, 
+    SubMenu,
+    MenuDivider,
+    MenuHeader
+ } from '@szhsin/react-menu';
 import '@szhsin/react-menu/dist/index.css';
 import '@szhsin/react-menu/dist/transitions/slide.css';
 
@@ -28,15 +35,17 @@ const Menus = () => {
                 <MenuItem>new DAO</MenuItem>
             </Menu>
             <Menu menuButton={<MenuButton> Gestion Projet</MenuButton>} transition>
-                <SubMenu label="Generale">
+                <MenuDivider />
+                <MenuHeader>Caracteristique Genarale</MenuHeader>
                     <MenuItem>Affaire</MenuItem>
                     <MenuItem>Position</MenuItem>
                     <MenuItem>Intervenants</MenuItem>
                     <MenuItem>Planification</MenuItem>
                     <MenuItem>Travaux a faire</MenuItem>
                     <MenuItem>Caracteristique Technique</MenuItem>
-                </SubMenu>
-                <SubMenu label="Suivie">
+                
+                <MenuDivider />
+                <MenuHeader>Suivie</MenuHeader>
                     <MenuItem>Retroplannig</MenuItem>
                     <MenuItem>Liste des modifications</MenuItem>
                     <MenuItem>Revue portefeuille</MenuItem>
@@ -49,7 +58,7 @@ const Menus = () => {
                     <MenuItem>nouveau courier</MenuItem>
                     <MenuItem>Rechercher</MenuItem>
                     <MenuItem>CRET</MenuItem>
-                </SubMenu>
+               
             </Menu>    
         </div>
     );
