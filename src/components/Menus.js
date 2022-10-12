@@ -1,7 +1,8 @@
 import React from 'react';
 
 const style ={
-    background: 'red'
+    background: 'red',
+    width: '15%'
 }
 
 
