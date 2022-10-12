@@ -12,7 +12,10 @@ const style ={
 const Menus = () => {
     return (
         <div style={style}>
-            <Menu menuButton={<MenuButton> Open Menu</MenuButton>} transition>
+            <Menu menuButton={<MenuButton> Gesttion DAO</MenuButton>} transition>
+                <MenuItem>new DAO</MenuItem>
+            </Menu>
+            <Menu menuButton={<MenuButton> Gestion Projet</MenuButton>} transition>
                 <SubMenu label="Generale">
                     <MenuItem>Affaire</MenuItem>
                     <MenuItem>Position</MenuItem>
@@ -35,8 +38,7 @@ const Menus = () => {
                     <MenuItem>Rechercher</MenuItem>
                     <MenuItem>CRET</MenuItem>
                 </SubMenu>
-            </Menu>
-                    
+            </Menu>    
         </div>
     );
 };
