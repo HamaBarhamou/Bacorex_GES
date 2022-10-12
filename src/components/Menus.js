@@ -1,5 +1,7 @@
 import React from 'react';
 import { Menu, MenuItem, MenuButton, SubMenu } from '@szhsin/react-menu';
+import '@szhsin/react-menu/dist/index.css';
+import '@szhsin/react-menu/dist/transitions/slide.css';
 
 const style ={
     background: '#C0C0C0',
@@ -10,7 +12,7 @@ const style ={
 const Menus = () => {
     return (
         <div style={style}>
-            <Menu menuButton={<MenuButton> Menu</MenuButton>}>
+            <Menu menuButton={<MenuButton> Open Menu</MenuButton>} transition>
                 <SubMenu label="Generale">
                     <MenuItem>Affaire</MenuItem>
                     <MenuItem>Position</MenuItem>
