@@ -1,1 +1,6 @@
 flask-restful
+Flask  
+datetime 
+uuid
+Flask-SQLAlchemy
+PyJWT
