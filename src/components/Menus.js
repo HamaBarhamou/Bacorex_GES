@@ -6,7 +6,7 @@
 /*   By: Barhamou <hamabarhamou@gmail.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/12 19:04:01 by Barhamou          #+#    #+#             */
-/*   Updated: 2022/10/12 23:16:21 by Barhamou         ###   ########.fr       */
+/*   Updated: 2022/10/18 12:38:34 by Barhamou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,10 +31,10 @@ const style ={
 const Menus = () => {
     return (
         <div style={style}>
-            <Menu menuButton={<MenuButton> Gesttion DAO</MenuButton>} transition>
+            <Menu menuButton={<MenuButton> Gesttion DAO</MenuButton>} onItemClick={(e) => console.log(`[Menu] ${e.value}`)} transition>
                 <MenuItem>new DAO</MenuItem>
             </Menu>
-            <Menu menuButton={<MenuButton> Gestion Projet</MenuButton>} transition>
+            <Menu menuButton={<MenuButton> Gestion Projet</MenuButton>}  transition>
                 <MenuDivider />
                 <MenuHeader>Caracteristique Genarale</MenuHeader>
                     <MenuItem>Affaire</MenuItem>
